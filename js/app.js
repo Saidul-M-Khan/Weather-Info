@@ -2,7 +2,7 @@ const API_KEY = `1ff6ccf1da1c9ea26bf26626b70bdca7`;
 
 const searchTemperature = () => {
     const city = document.getElementById('city-name').value;
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
 
     fetch(url)
     .then(response => response.json())
